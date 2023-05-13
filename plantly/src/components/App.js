@@ -15,10 +15,11 @@ import { QuizResultAPage } from './QuizResultA.js';
 import { QuizResultBPage } from './QuizResultB.js';
 import { QuizResultCPage } from './QuizResultC.js';
 
-import SignInPage from './SignIn.js'
+// import SignInPage from './SignIn.js'
 
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import DEFAULT_USERS from '../data/users.json';
+import { Quiz } from './Quiz.js';
 
 export default function App(props) {
     // Search/filter rendered plants
@@ -69,33 +70,30 @@ export default function App(props) {
                 <Routes>
                     <Route path="*" element={<Navigate to="/" />} />
                     <Route path="/" element={<HomePage />} currentUser={currentUser} />
-                    <Route path="/QuestionTemplate" element={<QuestionPage />} />
-                    <Route path="/QuizResultA" element={<QuizResultAPage plants={displayedPlants} />} />
-                    <Route path="/QuizResultB" element={<QuizResultBPage plants={displayedPlants} />} />
-                    <Route path="/QuizResultC" element={<QuizResultCPage plants={displayedPlants} />} />
+                    <Route path="/Quiz" element={<Quiz />} />
                     <Route path="/Explore" element={<ExplorePage />} >
                         <Route path="/Explore/:plantName" element={<PlantInfoPage plants={displayedPlants} />} />
                         <Route index={true} element={<PlantListPage applyFilterCallback={applyFilter} plants={displayedPlants} />} />
                     </Route>
                     <Route path="/About" element={<AboutPage />} />
-                    <Route path="/SignIn" element={<SignInPage currentUser={currentUser} loginCallback={loginUser} />} />
+                    {/* <Route path="/SignIn" element={<SignInPage currentUser={currentUser} loginCallback={loginUser} />} /> */}
 
                     {/* Calendar Page Protected */}
-                    <Route element={<ProtectedPage currentUser={currentUser} />}>
+                    {/* <Route element={<ProtectedPage currentUser={currentUser} />}>
                         <Route path="/Calendar" element={<PlantCalendarPage currentUser={currentUser} />} />
-                    </Route>
+                    </Route> */}
                 </Routes>
             </div>
         </div>
     );
 
     // Protected Routes
-    function ProtectedPage(props) {
-        if (props.currentUser.userId === null) {
-            return <Navigate to="/SignIn"></Navigate>
-        }
-        else {
-            return <Outlet />
-        }
-    }
+    // function ProtectedPage(props) {
+    //     if (props.currentUser.userId === null) {
+    //         return <Navigate to="/SignIn"></Navigate>
+    //     }
+    //     else {
+    //         return <Outlet />
+    //     }
+    // }
 }
