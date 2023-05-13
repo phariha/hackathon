@@ -22,22 +22,9 @@ export function Quiz() {
                         </header>
 
                         <div className="quiz-contain">
-
-                    
-                            {/* <Navigate replace to='./QuizResult.js'> */}
                                 <button className="btn btn-light" aria-label="start quiz">
                                     <div className="big-start">Start Quiz</div>
                                 </button>
-                                {/* <Route path="/QuizResult.js" component={QuizResult}></Route> */}
-                            {/* </Navigate> */}
-
-                            {/* <Router>
-                                <Route path="/QuizResult.js" component={QuizResult} />
-                            </Router> */}
-
-                            {/* <Routes>
-                                <Route as={Link} to='/QuizResult.js' element={<QuizResult />} />
-                            </Routes> */}
                         </div>
                     </section>
                 </div>
