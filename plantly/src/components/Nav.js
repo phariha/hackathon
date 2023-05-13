@@ -33,7 +33,7 @@ export function PlantNav(props) {
     return (
         <>
             <Navbar className="color-Nav" variant="dark" expand="lg">
-                <Navbar.Brand href="/">Plant Parenthood</Navbar.Brand>
+                <Navbar.Brand href="/">Plantly</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav>
