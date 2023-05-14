@@ -16,7 +16,7 @@ export function PlantNav(props) {
     return (
       <>
         <Navbar className="color-Nav" variant="dark" expand="lg">
-          <Navbar.Brand href="/" className="font-nav">Sustanify</Navbar.Brand>
+          <Navbar.Brand href="/" className="font-nav">Sustainify</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ml-auto"> {/* Add the ml-auto class */}
