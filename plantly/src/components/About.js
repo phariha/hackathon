@@ -15,7 +15,7 @@ export function AboutPage() {
                                 <div className='container'>
                                     <img src='img\manu.JPEG' alt="Person 1" className="member-circle circle-1"></img>
                                     <h2 className='about-name'>Saimanasvi Charugundla</h2>
-                                    <h3 className='about-email'>smanasvi@gmail.com</h3>
+                                    <h3 className='about-email'>smanasvic@gmail.com</h3>
                                 </div>
                             </div>
 
