@@ -15,8 +15,11 @@ export function TransportationPage() {
                         </div>
                     </div>
 
-                    <div className = "container-recycle2"> 
+                      <div className = "container-recycle2"> 
                         <h1 className = "recycle-h2">Alternative Forms of Transportation</h1>
+
+                        <p className="content-recycle m-3 p-3">Seattle offers a range of alternative transportation options that contribute to a more sustainable and efficient city. With an extensive bus network, residents and visitors can enjoy convenient and eco-friendly commuting. Additionally, the availability of shared bikes and scooters, such as Lime bikes, promotes active transportation and reduces reliance on cars. Lastly, the city's light rail system provides a reliable and accessible means of transportation, offering a greener alternative for longer journeys. These alternative transportation options not only alleviate traffic congestion but also contribute to cleaner air and a greener urban environment.</p>
+
 
                         <div className="image-section-recycle">
                           <div className="image-container-recycle">
@@ -36,7 +39,7 @@ export function TransportationPage() {
                             <div className="caption-recycle">Walking</div>
                           </div>
                         </div>
-                    </div>
+                      </div>
                 </body>
 
       {/* <div className="home-body">
