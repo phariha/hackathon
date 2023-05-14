@@ -521,6 +521,24 @@ cite {
         font-weight: bold;
     }
 
+    .quiz-body {
+        background-color: #C5BAA4;
+    }
+
+    .whyMe-picture-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4em;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      
+      .whyMe-picture {
+        width: 100%;
+        height: auto;
+      }      
+
     /* Quiz Result Pages */
     .quiz-result-heading {
         padding-top: 2rem;

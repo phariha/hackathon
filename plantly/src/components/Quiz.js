@@ -11,23 +11,12 @@ export function Quiz() {
     // }
 
     return (
-            <div className="quiz-body">
-                <div className="body-container">
-
-                    <section id="quiz-start">
-                        <header className="quiz-header">
-                            <div className="quiz-container">
-                                <h1>Discover the plant that fits you best!</h1>
-                            </div>
-                        </header>
-
-                        <div className="quiz-contain">
-                                <button className="btn btn-light" aria-label="start quiz">
-                                    <div className="big-start">Start Quiz</div>
-                                </button>
-                        </div>
-                    </section>
+        <div className="quiz-body">
+            <div className="body-container">
+                <div className="whyMe-picture-container">
+                    <img className="whyMe-picture" src="img/peopleBeach.png" alt="tree picture"></img>
                 </div>
             </div>
+        </div>
     )
 }
