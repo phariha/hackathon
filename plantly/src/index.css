@@ -126,10 +126,23 @@ p {
 
   .image-container-recycle {
     border-radius: 50%;
-    border: 2px solid #435B3C;
+    margin-right: 25px;
+    border: 6px solid #435B3C;
     overflow: hidden;
   }
   
+.content-recycle-info {
+    font-family: 'Lucida Sans';
+    flex: 1;
+    margin-right: 50px;
+    font-size: 1.3em;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.content-recycle-info.animate {
+    opacity: 1;
+}
   
 .content-recycle {
     font-family: 'Lucida Sans';
@@ -166,7 +179,7 @@ p {
     font-family: Arial, sans-serif;
     color: #333;
     padding: 20px;
-    background-color: #f2f2f2;
+    background-color: #F0F7F1;
   }
   
   .list-container-recycle {
@@ -467,35 +480,6 @@ h1.plant-info-heading {
     border: 5px solid black;
   }
 
-  
-
-/* .team-member {
-    display: inline-block;
-    text-align: center;
-    margin: 0 20px;
-  }
-
-.member-circle {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-}
-
-.circle-1 {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -75%);
-  
-}
-
-.circle-2 {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 25%);
-} */
 
 footer {
     color: white;

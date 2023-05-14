@@ -8,6 +8,7 @@ export function RecyclePage() {
       };
     }, []);
   
+    const infoRef = useRef(null);
     const textRef = useRef(null);
   
     useEffect(() => {
@@ -21,9 +22,11 @@ export function RecyclePage() {
         });
       });
   
+      if (infoRef.current) observer.observe(infoRef.current);
       if (textRef.current) observer.observe(textRef.current);
   
       return () => {
+        if (infoRef.current) observer.unobserve(infoRef.current);
         if (textRef.current) observer.unobserve(textRef.current);
       };
     }, []);
@@ -37,7 +40,7 @@ export function RecyclePage() {
                         <div className="image-recycle">
                             <img src="img/recycle.jpeg" alt="Image" />
                         </div>
-                        <div ref={textRef} className="content-recycle">
+                        <div ref={infoRef} className="content-recycle-info">
                             <p>The importance of recycling is closely tied to the concept of sustainability. Recycling is a key component of sustainable practices as it promotes the efficient use of resources and minimizes waste generation. By recycling materials such as paper, plastic, glass, and metals, we can reduce the demand for raw materials and energy-intensive extraction processes. This conserves natural resources, reduces pollution and greenhouse gas emissions, and helps mitigate the negative impacts of climate change. Additionally, recycling encourages a circular economy where materials are reused, prolonging their lifespan and reducing the need for constant production. Embracing recycling as part of our daily lives is essential for building a more sustainable future, where we can preserve the planet's resources for generations to come.</p>
                         </div>
                     </div>
