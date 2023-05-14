@@ -9,8 +9,8 @@ import { AboutPage } from "./About.js"
 import { PlantInfoPage } from './PlantInfo.js';
 import { ExplorePage } from './Explore.js';
 import { PlantListPage } from './PlantList.js';
-import {RecyclePage} from './Recycle'
-import { TransportationPage } from './Transportation';
+import { RecyclePage } from './Recycle.js'
+import { TransportationPage } from './Transportation.js';
 
 
 // import SignInPage from './SignIn.js'
