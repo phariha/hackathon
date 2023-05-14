@@ -416,8 +416,10 @@ footer a:hover {
     font-size: 1rem;
 }
 
-.explore-explaination {
+.explore-explanation {
     margin-left: 3em;
+    font-family: 'Lucida Sans';
+    font-size: 1em;
 }
 
 .explore-body {
