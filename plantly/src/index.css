@@ -347,7 +347,6 @@ footer a:hover {
 }
 
 .right-col-container-explore {
-    /* background-color: #a3bd9c; */
     text-align: left;
     padding: 40px 40px;
 }
@@ -361,18 +360,27 @@ footer a:hover {
 
 .search-container {
     display: flex;
+    margin-left: 2em;
     justify-content: left;
     margin-bottom: 2em;
 }
 
 .filter-container {
+    margin-left: 1em;
     display: flex;
     justify-content: left;
 }
 
 .explore-subheading {
+    margin-left: 2em;
     font-family: 'Lucida Sans';
     font-size: 1rem;
+}
+
+.explore-explanation {
+    margin-left: 3em;
+    font-family: 'Lucida Sans';
+    font-size: 1em;
 }
 
 .explore-body {
@@ -426,7 +434,6 @@ cite {
     margin: 1em;
     margin-top: 2rem;
     padding: 0.5em;
-    /* margin-right: 2rem; */
 }
 
 .btn-secondary {
