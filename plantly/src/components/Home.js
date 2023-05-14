@@ -1,5 +1,4 @@
 import React, { useRef, useEffect } from 'react';
-import { SignIn } from './Nav.js';
 
 
 export function HomePage(props) {
@@ -35,7 +34,7 @@ export function HomePage(props) {
     };
   }, []);
 
-  
+
 
   return (
     <>
@@ -47,35 +46,27 @@ export function HomePage(props) {
             <h2 ref={centeredSubRef} className="centered-sub display-2">Begins With Us</h2>
 
             <div className="right-col-container">
-                <div className='text-box-wrap'>
-                    <img className="plant" src="img/plant-icon-green.png" alt="plant icon" />
-                    <h1>Sustainify</h1>
-                    <h1>What does Sustainability mean?</h1>
-                    <p ref={paraOneRef} className='text-format'>
-                        Sustainability is a concept that focuses on meeting the needs of the present generation without compromising the ability of future 
-                        generations to meet their own needs. It is essential for environmental protection and maintaining a healthy planet for current and future
-                        generations. Sustainable practices promote the efficient use of natural resources, reduce waste and pollution, and help to mitigate the 
-                        effects of climate change.
-                    </p>
+              <div className='text-box-wrap'>
+                <span className='circle'><img className="plant" src="img/plant-icon-green.png" alt="plant icon" /></span>
+                <h1 className='sustainify-title'>Sustainify</h1>
+                <h1 className='sustainability'>What does Sustainability mean?</h1>
+                <p ref={paraOneRef} className='text-format'>
+                Sustainability is a critical concept that emphasizes the importance of meeting the needs of the current generation while safeguarding the ability of future generations to meet their own needs. Its significance lies in protecting the environment and maintaining a healthy planet for both current and future generations. By promoting efficient use of natural resources, minimizing waste and pollution, and addressing the impacts of climate change, sustainable practices are essential for ensuring long-term ecological balance.
+                </p>
 
-                    <p ref={paraTwoRef} className='text-format'>
-                        Sustainability is crucial because our planet's resources are finite and we need to ensure that we use them wisely. By implementing sustainable
-                        practices, we can help reduce the amount of waste generated, conserve natural resources, and prevent environmental degradation. Sustainability
-                        also helps to ensure that the needs of present and future generations are met, which is essential for social and economic development.
-                    </p>
+                <p ref={paraTwoRef} className='text-format'>
+                The finite nature of our planet's resources underscores the importance of sustainability. By adopting sustainable practices, we can reduce waste, preserve natural resources, and prevent environmental degradation. Additionally, sustainability ensures that the needs of present and future generations are met, which is crucial for both social and economic development.
+                </p>
 
-                    <p ref={paraThreeRef} className='text-format'>
-                        Overall, sustainability is an essential concept for protecting our environment and ensuring that we have a healthy planet for future generations.
-                        By taking actions such as reducing our carbon footprint, conserving resources, and supporting sustainable practices, we can all play a part in 
-                        promoting a sustainable future.
-                    </p>
-                </div>
-
-              {/* <SignIn /> */}
+                <p ref={paraThreeRef} className='text-format'>
+                Overall, sustainability is a fundamental concept for safeguarding the environment and ensuring a healthy planet for future generations. By taking steps such as reducing our carbon footprint, conserving resources, and supporting sustainable practices, we can all contribute to building a sustainable future.
+                </p>
+              </div>
             </div>
-            {/* </div> */}
           </div>
+        
         </div>
+        
         <footer>
           <cite>© Alp Duran https://unsplash.com/photos/5MrddkW_Cbg</cite>
         </footer>
