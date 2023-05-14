@@ -29,6 +29,8 @@ export function AboutPage() {
                         </div>
 
                         <p>Hi! We are both students at the University of Washington majoring in Informatics, and our goal with this application was to create a website that focuses on sustainable living. We wanted to provide people with cost-effective ways to help the environment, whether it be through reducing their carbon footprint, conserving energy, or minimizing waste. The website will serve as a one-stop resource for individuals who are interested in sustainable living, but may not know where to start or how to do it on a budget.</p>
+                        <p>We dedicate this website to our wonderful, hardworking mothers, who inspire us every day as women in this industry.</p>
+                        <p>Happy Mother's Day Amma!</p>
                     </div>
                 </section>
             </main>

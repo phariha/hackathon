@@ -386,9 +386,30 @@ h1.plant-info-heading {
 .content-transportation-info {
     font-family: 'Lucida Sans';
     flex: 1;
+    line-height: 1.7;
     margin-right: 50px;
+    padding: 50px 50px;
     font-size: 1.3em;
     opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.content-transportation-info.animate {
+    opacity: 1;
+}
+
+.content-transportation {
+    font-family: 'Lucida Sans';
+    flex: 1;
+    margin-right: 50px;
+    padding: 50px 50px;
+    font-size: 1.3em;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.content-transportation.animate {
+    opacity: 1;
 }
 
 .image-section-transportation {
@@ -406,7 +427,7 @@ h1.plant-info-heading {
   }
   
   .rounded-image-transportation {
-    border: 2px solid #000;
+    border: 4px solid #263722;
     border-radius: 10px;
     width: 200px;
     height: 200px;
@@ -414,6 +435,7 @@ h1.plant-info-heading {
   }
   
   .caption-transportation {
+    font-family: 'Lucida Sans';
     margin-top: 10px;
     text-align: center;
   }
