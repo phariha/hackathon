@@ -64,12 +64,7 @@ export function HomePage(props) {
               </div>
             </div>
           </div>
-        
         </div>
-        
-        <footer>
-          <cite>© Alp Duran https://unsplash.com/photos/5MrddkW_Cbg</cite>
-        </footer>
       </div>
     </>
   );
