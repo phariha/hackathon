@@ -113,6 +113,7 @@ p {
   .image-recycle img {
     max-width: 45rem;
     height: auto;
+    /* border-radius: 30%; */
   }
   
   .image-recycle {
@@ -120,36 +121,69 @@ p {
     margin-right: 20px;
     margin-left: 20px;
     margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .image-container-recycle {
+    border-radius: 50%;
+    margin-right: 25px;
+    border: 6px solid #435B3C;
+    overflow: hidden;
   }
   
-  .content-recycle {
+.content-recycle-info {
+    font-family: 'Lucida Sans';
     flex: 1;
-    margin-right: 20px;
-  }
+    margin-right: 50px;
+    font-size: 1.3em;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.content-recycle-info.animate {
+    opacity: 1;
+}
+  
+.content-recycle {
+    font-family: 'Lucida Sans';
+    flex: 1;
+    margin-right: 50px;
+    font-size: 1.3em;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.content-recycle.animate {
+    opacity: 1;
+}
+  
   
   .recycle-h1 {
     font-family: 'Lucida Sans';
     color: #685F4B;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
 
   .recycle-h2 {
     font-family: 'Lucida Sans';
     color: #F0F7F1;
     text-align: center;
-    margin-top: 30px;
     margin-bottom: 30px;
   }
 
+
   .recycling-list {
+    font-family: 'Lucida Sans';
     font-family: Arial, sans-serif;
     color: #333;
     padding: 20px;
-    background-color: #f2f2f2;
+    background-color: #F0F7F1;
   }
   
   .list-container-recycle {
+    font-family: 'Lucida Sans';
     display: flex;
     justify-content: center; /* Center the lists horizontally */
     align-items: flex-start; /* Align the lists to the top */
@@ -162,11 +196,14 @@ p {
   }
   
   .list-container-recycle h2 {
-    font-size: 18px;
+    font-family: 'Lucida Sans';
+    font-size: 30px;
     margin-bottom: 10px;
   }
   
   .list-container-recycle ul {
+    font-family: 'Lucida Sans';
+    font-size: 20px;
     list-style-type: disc;
     padding-left: 20px;
   }
@@ -175,9 +212,8 @@ p {
     margin-bottom: 5px;
   }
   
-  
-
   .container-recycle2 {
+    padding: 40px 40px;
       background-color: #435B3C;
   }
 
@@ -342,51 +378,34 @@ h1.plant-info-heading {
 
 /* Transportation Page */
 
-.right-col-container-transport {
-    background-color: #A88C7D;
-    text-align: center;
-    padding: 50px 50px;
-}
-
-.text-box-wrap-transport {
-    border: 7px solid #453329;
-    padding: 0.5em;
-    display: inline-block; 
-}
-
-.transport-title {
-    margin: 0.5em;
-    color: #303122;
-    font-family: 'Lucida Sans';
-    font-weight: lighter;
-}
-
-.text-format-transport {
-    font-size: 1.5em;
-    color: #303122;
-    font-family: 'Lucida Sans';
-    margin: 2em;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
 
 .text-format-transport.animate {
     opacity: 1;
 }
 
-.image-section-recycle {
+.content-transportation-info {
+    font-family: 'Lucida Sans';
+    flex: 1;
+    margin-right: 50px;
+    font-size: 1.3em;
+    opacity: 0;
+}
+
+.image-section-transportation {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    margin-top: 2rem;
   }
   
-  .image-container-recycle {
+  .image-container-transportation {
     text-align: center;
-    margin: 0 5rem;
+    margin: 0 1rem;
     padding-bottom: 2rem;
+    flex: 1;
   }
   
-  .rounded-image-recycle {
+  .rounded-image-transportation {
     border: 2px solid #000;
     border-radius: 10px;
     width: 200px;
@@ -394,14 +413,11 @@ h1.plant-info-heading {
     object-fit: cover;
   }
   
-  .caption-recycle {
+  .caption-transportation {
     margin-top: 10px;
+    text-align: center;
   }
   
-  
-  
-
-
 
 /* About Page */
 
@@ -471,35 +487,6 @@ h1.plant-info-heading {
     border: 5px solid black;
   }
 
-  
-
-/* .team-member {
-    display: inline-block;
-    text-align: center;
-    margin: 0 20px;
-  }
-
-.member-circle {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-}
-
-.circle-1 {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -75%);
-  
-}
-
-.circle-2 {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 25%);
-} */
 
 footer {
     color: white;
