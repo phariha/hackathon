@@ -42,7 +42,7 @@ export function PlantListPage(props) {
                 </div>
             </div>
             <h2 className="explore-subheading">Search for different species of houseplants in our houseplant index!</h2>
-            <h3>Click the cards below to learn more about each plant!</h3>
+            <h3 className='explore-explaination'>Click the cards below to learn more about each plant!</h3>
 
             <div className="search-container">
                 <input className="search-bar" type="text" placeholder="Search..." onChange={(e) => setQuery(e.target.value)} />
