@@ -9,6 +9,8 @@ import { AboutPage } from "./About.js"
 import { PlantInfoPage } from './PlantInfo.js';
 import { ExplorePage } from './Explore.js';
 import { PlantListPage } from './PlantList.js';
+import {RecyclePage} from './Recycle'
+import { TransportationPage } from './Transportation';
 
 
 // import SignInPage from './SignIn.js'
@@ -71,6 +73,8 @@ export default function App(props) {
                         <Route path="/Explore/:plantName" element={<PlantInfoPage plants={displayedPlants} />} />
                         <Route index={true} element={<PlantListPage applyFilterCallback={applyFilter} plants={displayedPlants} />} />
                     </Route>
+                    <Route path="/Recycle" element={<RecyclePage />} />
+                    <Route path="/Transportation" element={<TransportationPage />} />
                     <Route path="/About" element={<AboutPage />} />
                     {/* <Route path="/SignIn" element={<SignInPage currentUser={currentUser} loginCallback={loginUser} />} /> */}
 

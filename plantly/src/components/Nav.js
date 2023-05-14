@@ -24,11 +24,11 @@ export function PlantNav(props) {
                 Why Me
               </Nav.Link>
               <NavDropdown title="Take Action" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.2">Recycle</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/Recycle">Recycle</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to="/Explore">
                   Explore
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.1">
+                <NavDropdown.Item as={Link} to="/Transportation">
                   Transportation
                 </NavDropdown.Item>
               </NavDropdown>
