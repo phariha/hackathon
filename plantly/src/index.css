@@ -100,13 +100,18 @@ p {
   }
 
 /* recycle page */
+
+.body-recycle body {
+    background-color: #F0F7F1;
+}
+
 .container-recycle {
     display: flex;
     align-items: center;
   }
 
   .image-recycle img {
-    max-width: 50rem;
+    max-width: 45rem;
     height: auto;
   }
   
@@ -122,7 +127,24 @@ p {
     margin-right: 20px;
   }
   
-  
+  .recycle-h1 {
+    font-family: 'Lucida Sans';
+    color: #685F4B;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .recycle-h2 {
+    font-family: 'Lucida Sans';
+    color: #685F4B;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .container-recycle2 {
+      background-color: 
+  }
 
 /* Home Page */
 
