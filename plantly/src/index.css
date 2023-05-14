@@ -61,6 +61,7 @@ p {
 .font-nav{
     font-family: 'Lucida Sans';
     font-size: 1.5rem;
+    margin: 0.2em;
 }
   
   .color-Nav .container {
@@ -365,15 +366,45 @@ footer a:hover {
 
 /* Explore Page */
 
+/* .plant-explore {
+    color: #698CAA;
+} */
+
 .explore-heading {
     font-size: 2rem;
+    margin-top: 0.4em;
+    margin-bottom: 1em;
+    font-family: 'Lucida Sans';
+    color: #3c5a35;
+}
+
+.plant-grow {
+    font-size: 20px;
+    font-family: 'Lucida Sans';
+    margin-top: 1em;
+    padding-right: 1em;
+}
+
+.right-col-container-explore {
+    /* background-color: #a3bd9c; */
+    text-align: left;
+    padding: 40px 40px;
+}
+
+.text-box-wrap-explore {
+    border: 7px solid #3c5a35;
+    padding: 1em;
+    margin: 1em;
+    display: inline-block;
 }
 
 .explore-subheading {
+    font-family: 'Lucida Sans';
     font-size: 1rem;
 }
 
 .explore-body {
+    font-family: 'Lucida Sans';
     width: 100vw;
     min-height: 100vh;
     background-color: #F0F7F1;
@@ -394,6 +425,7 @@ footer a:hover {
 }
 
 .explore-item h3 {
+    font-family: 'Lucida Sans';
     font-size: 1.5rem;
     padding-top: 1.8rem;
     text-align: center;
@@ -409,6 +441,7 @@ cite {
 }
 
 .search-bar {
+    margin: 0.5em;
     font-size: 0.75rem;
     align-self: center;
 }
@@ -418,12 +451,16 @@ cite {
 }
 
 .form-select {
+    margin: 1em;
     margin-top: 2rem;
-    margin-right: 2rem;
+    padding: 0.5em;
+    /* margin-right: 2rem; */
 }
 
 .btn-secondary {
+    margin: 1em;
     margin-top: 2rem;
+    padding: 0.5em;
 }
 
 .mb-3 .col-auto {
@@ -432,15 +469,18 @@ cite {
 }
 
 .card-info {
+    font-family: 'Lucida Sans';
     padding: 1.8rem;
 }
 
 .card-info em {
+    font-family: 'Lucida Sans';
     font-weight: bold;
     font-style: normal;
 }
 
 .card-info h4 {
+    font-family: 'Lucida Sans';
     font-size: 16px;
     margin-bottom: 1.8rem;
     margin-top: 1.8rem;
