@@ -196,7 +196,6 @@ p {
     color: #595c3f;
     font-family: 'Lucida Sans';
     font-weight: lighter;
-    /* font-size: 3rem; */
 }
 
 .sustainability {
@@ -312,20 +311,35 @@ footer a:hover {
 
 /* Quiz Page */
 
-.quiz-body,
-.calendar-body,
-.calendar-event-body {
-    background-color: #A0A66F;
-    height: 100vh;
-}
 
 .text-box-wrap-whyme {
-    border: 7px solid #B2A68D;
+    border: 7px solid #847B67;
     padding: 0.5em;
     display: inline-block; 
 }
 
+.whyme-title {
+    margin: 0.5em;
+    font-size: 2em;
+    color: #685F4B;
+    font-family: 'Lucida Sans';
+    font-weight: normal;
+}
+
+.text-format-whyme {
+    color: #685F4B;
+    font-family: 'Lucida Sans';
+    margin: 2em;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;    
+}
+
+.text-format-whyme.animate {
+    opacity: 1;
+}
+
 .right-col-container-whyme {
+    font-size: 18px;
     background-color: #B2A68D;
     text-align: center;
     padding: 50px 50px;
@@ -333,85 +347,6 @@ footer a:hover {
 
 .right-col-container-whyme p {
     font-size: 1.5em;
-}
-
-.quiz-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-}
-
-.quiz-template-body .btn-light {
-    color: #595c3f;
-}
-
-.quiz-contain {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px 35px;
-}
-
-.quiz-contain .mobile-start {
-    display: none;
-}
-
-.quiz-contain .big-start {
-    color: #595c3f;
-    color: #787C53;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-.quiz-contain button {
-    padding: 15px 20px;
-    font-size: 18px;
-}
-
-.quiz-question-container {
-    margin: 0 auto;
-    margin-top: 4rem;
-    width: 70%;
-    background-color: #A0A66F;
-    padding: 8rem;
-    border-radius: 16px;
-    color: white;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
-        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-    text-align: center;
-}
-
-.quiz-question-container .btn {
-    margin-right: 1.5rem;
-    font-size: 1rem;
-}
-
-.quiz-question-container .btn:last-child {
-    margin-right: 0rem;
-}
-
-.questionText {
-    color: white;
-    font-size: 1.5rem;
-}
-
-.question-count {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    font-weight: bold;
-}
-
-.question {
-    width: 100%;
-    position: relative;
-}
-
-.quiz-template-body {
-    background-color: #F0F7F1;
 }
 
 /* Quiz Result Page */
