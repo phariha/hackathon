@@ -285,6 +285,22 @@ footer a:hover {
     height: 100vh;
 }
 
+.text-box-wrap-whyme {
+    border: 7px solid #B2A68D;
+    padding: 0.5em;
+    display: inline-block; 
+}
+
+.right-col-container-whyme {
+    background-color: #B2A68D;
+    text-align: center;
+    padding: 50px 50px;
+}
+
+.right-col-container-whyme p {
+    font-size: 1.3em;
+}
+
 .quiz-container {
     position: absolute;
     top: 50%;
@@ -578,21 +594,7 @@ cite {
 
     .quiz-body {
         background-color: #C5BAA4;
-    }
-
-    .whyMe-picture-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 4em;
-        border-radius: 10px;
-        overflow: hidden;
-      }
-      
-      .whyMe-picture {
-        width: 100%;
-        height: auto;
-      }      
+    }     
 
     /* Quiz Result Pages */
     .quiz-result-heading {
