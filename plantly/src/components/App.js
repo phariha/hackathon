@@ -5,15 +5,11 @@ import { Navigate } from 'react-router-dom';
 import { Routes, Route, useNavigate, Outlet } from "react-router-dom";
 import { PlantNav } from './Nav.js';
 import { HomePage } from "./Home.js";
-import { PlantCalendarPage } from "./Calendar.js";
 import { AboutPage } from "./About.js"
-import { QuestionPage } from './QuestionTemplate.js';
 import { PlantInfoPage } from './PlantInfo.js';
 import { ExplorePage } from './Explore.js';
 import { PlantListPage } from './PlantList.js';
-import { QuizResultAPage } from './QuizResultA.js';
-import { QuizResultBPage } from './QuizResultB.js';
-import { QuizResultCPage } from './QuizResultC.js';
+
 
 // import SignInPage from './SignIn.js'
 
