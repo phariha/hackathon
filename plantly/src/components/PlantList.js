@@ -43,29 +43,26 @@ export function PlantListPage(props) {
             </div>
             <h2 className="explore-subheading">Search for different species of houseplants in our houseplant index!</h2>
             <h3>Click the cards below to learn more about each plant!</h3>
-            {/* Search Bar */}
-            <input className="search-bar" type="text" placeholder="Search..." onChange={(e) => setQuery(e.target.value)} />
 
-            {/* Filter By */}
-            <div className="row align-items-center mb-3">
-                <div className="col-auto">
-
-
-
-                    <div className="filter-container">
-                        <select id="costSelect" className="form-select" value={selectedCost} onChange={changeCostSelectedElem}>
-                            <option value="">Select Cost Level</option>
-                            {costOptionElems}
-                        </select>
-                        {/* <div className="col-auto"> */}
-                            <button onClick={handleClick} id="submitButton" type="submit" className="btn btn-secondary" aria-label="apply filter">Apply Filter</button>
-                        {/* </div> */}
+            <div className="search-container">
+                <input className="search-bar" type="text" placeholder="Search..." onChange={(e) => setQuery(e.target.value)} />
+                <div className="row align-items-center mb-3">
+                    <div className="col-auto">
+                        <div className="filter-container">
+                            <select id="costSelect" className="form-select" value={selectedCost} onChange={changeCostSelectedElem}>
+                                <option value="">Select Cost Level</option>
+                                {costOptionElems}
+                            </select>
+                            <div className="filter-container">
+                                <div className="col-auto">
+                                <button onClick={handleClick} id="submitButton" type="submit" className="btn btn-secondary" aria-label="apply filter">Apply Filter</button>
+                            </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
             </div>
-
-            {/* Plant Cards */}
             <div className="explore-container">
                 {plantsFiltered}
                 {plantsFiltered.length < 1 && <h2>Sorry, there are no results for your search.</h2>}

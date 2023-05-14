@@ -398,6 +398,17 @@ footer a:hover {
     display: inline-block;
 }
 
+.search-container {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 2em;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: left;
+}
+
 .explore-subheading {
     font-family: 'Lucida Sans';
     font-size: 1rem;
@@ -442,7 +453,7 @@ cite {
 
 .search-bar {
     margin: 0.5em;
-    font-size: 0.75rem;
+    font-size: 0.5rem;
     align-self: center;
 }
 
