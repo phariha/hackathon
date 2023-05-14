@@ -56,27 +56,48 @@ p {
 .color-Nav {
     background-color: #787C53;
     padding: 0.75rem;
-}
+  }
 
-.color-Nav .container {
+.font-nav{
+    font-family: 'Lucida Sans';
+    font-size: 1.5rem;
+}
+  
+  .color-Nav .container {
     padding-left: 0rem;
     margin-left: 1.5rem;
-}
-
-nav a:hover {
+  }
+  
+  nav a:hover {
     color: #f0f0f0;
     border-bottom: .2rem dotted #f0f0f0;
     transition: .2s ease-in-out;
-}
-
-.navbar-nav .btn {
+  }
+  
+  .navbar-nav .btn {
     color: #595c3f;
     width: fit-content;
-}
-
-.navbar-nav .btn:hover {
+  }
+  
+  .navbar-nav .btn:hover {
     border-bottom: none;
-}
+  }
+  
+  .navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 1.5rem;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-left: 1rem;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 18px;
+  }
+  
 
 /* Home Page */
 
@@ -325,7 +346,7 @@ footer a:hover {
 }
 
 .right-col-container-whyme p {
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 /* Quiz Result Page */
