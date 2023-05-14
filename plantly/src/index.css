@@ -113,6 +113,7 @@ p {
   .image-recycle img {
     max-width: 45rem;
     height: auto;
+    /* border-radius: 30%; */
   }
   
   .image-recycle {
@@ -120,29 +121,55 @@ p {
     margin-right: 20px;
     margin-left: 20px;
     margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .image-container-recycle {
+    /* width: 150px;
+    height: 150px; */
+    border-radius: 50%;
+    border: 2px solid #435B3C;
+    overflow: hidden;
   }
   
-  .content-recycle {
+  /* .image-container-recycle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+  
+.content-recycle {
+    font-family: 'Lucida Sans';
     flex: 1;
-    margin-right: 20px;
-  }
+    margin-right: 50px;
+    font-size: 1.3em;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.content-recycle.animate {
+    opacity: 1;
+}
+  
   
   .recycle-h1 {
     font-family: 'Lucida Sans';
     color: #685F4B;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
 
   .recycle-h2 {
     font-family: 'Lucida Sans';
     color: #F0F7F1;
     text-align: center;
-    margin-top: 30px;
     margin-bottom: 30px;
   }
 
+
   .recycling-list {
+    font-family: 'Lucida Sans';
     font-family: Arial, sans-serif;
     color: #333;
     padding: 20px;
@@ -150,6 +177,7 @@ p {
   }
   
   .list-container-recycle {
+    font-family: 'Lucida Sans';
     display: flex;
     justify-content: center; /* Center the lists horizontally */
     align-items: flex-start; /* Align the lists to the top */
@@ -162,11 +190,14 @@ p {
   }
   
   .list-container-recycle h2 {
-    font-size: 18px;
+    font-family: 'Lucida Sans';
+    font-size: 30px;
     margin-bottom: 10px;
   }
   
   .list-container-recycle ul {
+    font-family: 'Lucida Sans';
+    font-size: 20px;
     list-style-type: disc;
     padding-left: 20px;
   }
@@ -175,9 +206,8 @@ p {
     margin-bottom: 5px;
   }
   
-  
-
   .container-recycle2 {
+    padding: 40px 40px;
       background-color: #435B3C;
   }
 
@@ -373,33 +403,6 @@ h1.plant-info-heading {
 .text-format-transport.animate {
     opacity: 1;
 }
-
-.image-section-recycle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .image-container-recycle {
-    text-align: center;
-    margin: 0 5rem;
-    padding-bottom: 2rem;
-  }
-  
-  .rounded-image-recycle {
-    border: 2px solid #000;
-    border-radius: 10px;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .caption-recycle {
-    margin-top: 10px;
-  }
-  
-  
-  
 
 
 
