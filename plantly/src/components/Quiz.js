@@ -57,17 +57,17 @@ export function Quiz() {
 
           <div className="right-col-container-whyme">
                 <div className='text-box-wrap-whyme'>
-                    <img className="plant" src="img/plant-icon-green.png" alt="plant icon" />
-                    <h1>Why Me?</h1>
-                    <p ref={paraOneRef} className='text-format'>
+                <span className='circle'><img className="plant" src="img/plant-icon-green.png" alt="plant icon" /></span>
+                    <h1 className='whyme-title'>Why Me?</h1>
+                    <p ref={paraOneRef} className='text-format-whyme'>
                     College students should care about sustainability as they are the future leaders responsible for shaping the world they inherit. Sustainability encompasses environmental, social, and economic factors, all of which are interconnected. By embracing sustainable principles, students can make a positive impact on their environment and inspire others to do the same. Caring about sustainability leads to responsible resource management, improved quality of life, and a more equitable society.
                     </p>
 
-                    <p ref={paraTwoRef} className='text-format'>
+                    <p ref={paraTwoRef} className='text-format-whyme'>
                     One way college students can contribute to sustainability is by incorporating house plants into their living spaces. House plants improve air quality by absorbing carbon dioxide and releasing oxygen, reduce indoor pollutants, and regulate humidity levels. Nurturing house plants creates a greener and healthier living environment while reducing ecological footprints.
                     </p>
 
-                    <p ref={paraThreeRef} className='text-format'>
+                    <p ref={paraThreeRef} className='text-format-whyme'>
                     College students can support sustainability through transportation choices and recycling. Opting for environmentally friendly transportation modes like walking, cycling, or public transit reduces carbon emissions, alleviates traffic congestion, and promotes a sustainable urban environment. Additionally, recycling waste materials diverts valuable resources from landfills, conserves energy, and promotes the circular economy. Active participation in recycling initiatives and proper waste management practices contribute to reducing environmental impact and creating more sustainable communities.
                     </p>
                 </div>
