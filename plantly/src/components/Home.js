@@ -27,11 +27,11 @@ export function HomePage(props) {
     observer.observe(paraThreeRef.current);
 
     return () => {
-      observer.unobserve(centeredMainRef.current);
-      observer.unobserve(centeredSubRef.current);
-      observer.unobserve(paraOneRef.current);
-      observer.unobserve(paraTwoRef.current);
-      observer.unobserve(paraThreeRef.current);
+      if (centeredMainRef.current) observer.unobserve(centeredMainRef.current);
+      if (centeredSubRef.current) observer.unobserve(centeredSubRef.current);
+      if (paraOneRef.current) observer.unobserve(paraOneRef.current);
+      if (paraTwoRef.current) observer.unobserve(paraTwoRef.current);
+      if (paraThreeRef.current) observer.unobserve(paraThreeRef.current);
     };
   }, []);
 
