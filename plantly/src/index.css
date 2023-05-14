@@ -298,26 +298,100 @@ h1.plant-info-heading {
 /* About Page */
 
 .about-text {
+    font-family: 'Lucida Sans';
     padding-top: 2rem;
     height: 100vh;
+    background-color: #ded3c0;
 }
 
 .about-text h1 {
+    font-family: 'Lucida Sans';
     font-size: 2.2rem;
 }
 
 .about-text h2 {
+    font-family: 'Lucida Sans';
     padding-top: 1.4rem;
+    /* margin: 2em; */
+    margin-top: 0.5em;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 .about-text p {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    margin-top: 2em;
 }
 
 .about-body {
     background-color: #F0F7F1;
 }
+
+.about-name {
+    font-family: 'Lucida Sans';
+}
+
+.about-email {
+    font-family: 'Lucida Sans';
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .team-member {
+    margin: 0 1rem;
+    text-align: center;
+  }
+  
+  .member-circle {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  
+  .circle-1 {
+    border: 5px solid black;
+  }
+  
+  .circle-2 {
+    border: 5px solid black;
+  }
+
+  
+
+/* .team-member {
+    display: inline-block;
+    text-align: center;
+    margin: 0 20px;
+  }
+
+.member-circle {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.circle-1 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+  
+}
+
+.circle-2 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 25%);
+} */
 
 footer {
     color: white;
