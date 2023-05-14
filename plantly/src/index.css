@@ -98,7 +98,6 @@ p {
   .navbar-nav .nav-link {
     font-size: 18px;
   }
-<<<<<<< HEAD
 
 /* recycle page */
 
@@ -137,18 +136,50 @@ p {
 
   .recycle-h2 {
     font-family: 'Lucida Sans';
-    color: #685F4B;
+    color: #F0F7F1;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
   }
 
-  /* .container-recycle2 {
-      background-color: 
-  } */
-=======
+  .recycling-list {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
   
->>>>>>> 6d63c10e9792c9b5e4e7ac0ba09cbe7974eccd49
+  .list-container-recycle {
+    display: flex;
+    justify-content: center; /* Center the lists horizontally */
+    align-items: flex-start; /* Align the lists to the top */
+    padding-top: 20px; /* Add padding to the top */
+  }
+  
+  .list-column-recycle {
+    flex: 1;
+    padding: 0 5rem; /* Adjust the padding to decrease the space */
+  }
+  
+  .list-container-recycle h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .list-container-recycle ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .list-container-recycle li {
+    margin-bottom: 5px;
+  }
+  
+  
+
+  .container-recycle2 {
+      background-color: #435B3C;
+  }
 
 /* Home Page */
 
