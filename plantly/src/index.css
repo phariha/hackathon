@@ -98,7 +98,57 @@ p {
   .navbar-nav .nav-link {
     font-size: 18px;
   }
+<<<<<<< HEAD
+
+/* recycle page */
+
+.body-recycle body {
+    background-color: #F0F7F1;
+}
+
+.container-recycle {
+    display: flex;
+    align-items: center;
+  }
+
+  .image-recycle img {
+    max-width: 45rem;
+    height: auto;
+  }
   
+  .image-recycle {
+    flex: 1;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  
+  .content-recycle {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .recycle-h1 {
+    font-family: 'Lucida Sans';
+    color: #685F4B;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .recycle-h2 {
+    font-family: 'Lucida Sans';
+    color: #685F4B;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  /* .container-recycle2 {
+      background-color: 
+  } */
+=======
+  
+>>>>>>> 6d63c10e9792c9b5e4e7ac0ba09cbe7974eccd49
 
 /* Home Page */
 
