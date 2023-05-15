@@ -14,31 +14,31 @@ export function Quiz() {
     };
   }, []);
 
-useEffect(() => {
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.intersectionRatio > 0) {
-        entry.target.classList.add('animate');
-      } else {
-        entry.target.classList.remove('animate');
-      }
+  useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.intersectionRatio > 0) {
+          entry.target.classList.add('animate');
+        } else {
+          entry.target.classList.remove('animate');
+        }
+      });
     });
-  });
 
-  if (centeredMainRef.current) observer.observe(centeredMainRef.current);
-if (centeredSubRef.current) observer.observe(centeredSubRef.current);
-if (paraOneRef.current) observer.observe(paraOneRef.current);
-if (paraTwoRef.current) observer.observe(paraTwoRef.current);
-if (paraThreeRef.current) observer.observe(paraThreeRef.current);
+    if (centeredMainRef.current) observer.observe(centeredMainRef.current);
+    if (centeredSubRef.current) observer.observe(centeredSubRef.current);
+    if (paraOneRef.current) observer.observe(paraOneRef.current);
+    if (paraTwoRef.current) observer.observe(paraTwoRef.current);
+    if (paraThreeRef.current) observer.observe(paraThreeRef.current);
 
-return () => {
-  if (centeredMainRef.current) observer.unobserve(centeredMainRef.current);
-  if (centeredSubRef.current) observer.unobserve(centeredSubRef.current);
-  if (paraOneRef.current) observer.unobserve(paraOneRef.current);
-  if (paraTwoRef.current) observer.unobserve(paraTwoRef.current);
-  if (paraThreeRef.current) observer.unobserve(paraThreeRef.current);
-};
-}, []);
+    return () => {
+      if (centeredMainRef.current) observer.unobserve(centeredMainRef.current);
+      if (centeredSubRef.current) observer.unobserve(centeredSubRef.current);
+      if (paraOneRef.current) observer.unobserve(paraOneRef.current);
+      if (paraTwoRef.current) observer.unobserve(paraTwoRef.current);
+      if (paraThreeRef.current) observer.unobserve(paraThreeRef.current);
+    };
+  }, []);
 
   return (
     <div className="home-body">
@@ -70,8 +70,6 @@ return () => {
                     College students can support sustainability through transportation choices and recycling. Opting for environmentally friendly transportation modes like walking, cycling, or public transit reduces carbon emissions, alleviates traffic congestion, and promotes a sustainable urban environment. Additionally, recycling waste materials diverts valuable resources from landfills, conserves energy, and promotes the circular economy. Active participation in recycling initiatives and proper waste management practices contribute to reducing environmental impact and creating more sustainable communities.
                     </p>
                 </div>
-
-              {/* <SignIn /> */}
             </div>
         </div>
       </div>
