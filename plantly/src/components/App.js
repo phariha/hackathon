@@ -31,13 +31,13 @@ export default function App(props) {
                 if (plant.COST === selectedCostLevel) {
                     return plant;
                 }
+                return null;
             }));
         }
     }
 
     // Sign in user
     const [currentUser, setCurrentUser] = useState(DEFAULT_USERS[0]) //default to null user
-    const navigateTo = useNavigate();
 
     //effect to run when the component first loads
     useEffect(() => {
@@ -56,10 +56,6 @@ export default function App(props) {
         })
 
     }, [])
-
-    const loginUser = (userObj) => {
-        setCurrentUser(userObj);
-    }
 
     return (
         <div>

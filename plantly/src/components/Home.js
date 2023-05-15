@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from 'react';
 
-
 export function HomePage(props) {
   const centeredMainRef = useRef(null);
   const centeredSubRef = useRef(null);
@@ -19,18 +18,24 @@ export function HomePage(props) {
       });
     });
 
-    observer.observe(centeredMainRef.current);
-    observer.observe(centeredSubRef.current);
-    observer.observe(paraOneRef.current);
-    observer.observe(paraTwoRef.current);
-    observer.observe(paraThreeRef.current);
+    const centeredMainNode = centeredMainRef.current;
+    const centeredSubNode = centeredSubRef.current;
+    const paraOneNode = paraOneRef.current;
+    const paraTwoNode = paraTwoRef.current;
+    const paraThreeNode = paraThreeRef.current;
+
+    observer.observe(centeredMainNode);
+    observer.observe(centeredSubNode);
+    observer.observe(paraOneNode);
+    observer.observe(paraTwoNode);
+    observer.observe(paraThreeNode);
 
     return () => {
-      if (centeredMainRef.current) observer.unobserve(centeredMainRef.current);
-      if (centeredSubRef.current) observer.unobserve(centeredSubRef.current);
-      if (paraOneRef.current) observer.unobserve(paraOneRef.current);
-      if (paraTwoRef.current) observer.unobserve(paraTwoRef.current);
-      if (paraThreeRef.current) observer.unobserve(paraThreeRef.current);
+      if (centeredMainNode) observer.unobserve(centeredMainNode);
+      if (centeredSubNode) observer.unobserve(centeredSubNode);
+      if (paraOneNode) observer.unobserve(paraOneNode);
+      if (paraTwoNode) observer.unobserve(paraTwoNode);
+      if (paraThreeNode) observer.unobserve(paraThreeNode);
     };
   }, []);
 
@@ -41,7 +46,7 @@ export function HomePage(props) {
       <div className="home-body">
         <div className="container-fluid">
           <div className="row">
-            <img className="tree-picture" src="https://media.cntraveler.com/photos/5eb18e42fc043ed5d9779733/16:9/w_2580,c_limit/BlackForest-Germany-GettyImages-147180370.jpg" alt="tree picture"></img>
+            <img className="tree-picture" src="https://media.cntraveler.com/photos/5eb18e42fc043ed5d9779733/16:9/w_2580,c_limit/BlackForest-Germany-GettyImages-147180370.jpg" alt="tree"></img>
             <h2 ref={centeredMainRef} className="centered-main">Sustainability</h2>
             <h2 ref={centeredSubRef} className="centered-sub display-2">Begins With Us</h2>
 
@@ -51,15 +56,15 @@ export function HomePage(props) {
                 <h1 className='sustainify-title'>Sustainify</h1>
                 <h1 className='sustainability'>What does Sustainability mean?</h1>
                 <p ref={paraOneRef} className='text-format'>
-                Sustainability is a critical concept that emphasizes the importance of meeting the needs of the current generation while safeguarding the ability of future generations to meet their own needs. Its significance lies in protecting the environment and maintaining a healthy planet for both current and future generations. By promoting efficient use of natural resources, minimizing waste and pollution, and addressing the impacts of climate change, sustainable practices are essential for ensuring long-term ecological balance.
+                  Sustainability is a critical concept that emphasizes the importance of meeting the needs of the current generation while safeguarding the ability of future generations to meet their own needs. Its significance lies in protecting the environment and maintaining a healthy planet for both current and future generations. By promoting efficient use of natural resources, minimizing waste and pollution, and addressing the impacts of climate change, sustainable practices are essential for ensuring long-term ecological balance.
                 </p>
 
                 <p ref={paraTwoRef} className='text-format'>
-                The finite nature of our planet's resources underscores the importance of sustainability. By adopting sustainable practices, we can reduce waste, preserve natural resources, and prevent environmental degradation. Additionally, sustainability ensures that the needs of present and future generations are met, which is crucial for both social and economic development.
+                  The finite nature of our planet's resources underscores the importance of sustainability. By adopting sustainable practices, we can reduce waste, preserve natural resources, and prevent environmental degradation. Additionally, sustainability ensures that the needs of present and future generations are met, which is crucial for both social and economic development.
                 </p>
 
                 <p ref={paraThreeRef} className='text-format'>
-                Overall, sustainability is a fundamental concept for safeguarding the environment and ensuring a healthy planet for future generations. By taking steps such as reducing our carbon footprint, conserving resources, and supporting sustainable practices, we can all contribute to building a sustainable future.
+                  Overall, sustainability is a fundamental concept for safeguarding the environment and ensuring a healthy planet for future generations. By taking steps such as reducing our carbon footprint, conserving resources, and supporting sustainable practices, we can all contribute to building a sustainable future.
                 </p>
               </div>
             </div>

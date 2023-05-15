@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from 'react';
 
-
 export function TransportationPage() {
   useEffect(() => {
     document.body.style.backgroundColor = 'your-body-color';
@@ -23,12 +22,15 @@ export function TransportationPage() {
       });
     });
 
-    if (infoRef.current) observer.observe(infoRef.current);
-    if (textRef.current) observer.observe(textRef.current);
+    const infoNode = infoRef.current;
+    const textNode = textRef.current;
+
+    if (infoNode) observer.observe(infoNode);
+    if (textNode) observer.observe(textNode);
 
     return () => {
-      if (infoRef.current) observer.unobserve(infoRef.current);
-      if (textRef.current) observer.unobserve(textRef.current);
+      if (infoNode) observer.unobserve(infoNode);
+      if (textNode) observer.unobserve(textNode);
     };
   }, []);
 
@@ -38,7 +40,7 @@ export function TransportationPage() {
         <h1 className="recycle-h1">Transportation</h1>
         <div className="container-recycle">
           <div className="image-recycle">
-            <img src="https://i.guim.co.uk/img/media/2c187328c1384d02c5ecba548478fbd2af8cf674/48_29_3079_1847/master/3079.jpg?width=1200&quality=85&auto=format&fit=max&s=bf337dc1230054c7a51d86095bd967cb" alt="tree picture"></img>
+            <img src="https://i.guim.co.uk/img/media/2c187328c1384d02c5ecba548478fbd2af8cf674/48_29_3079_1847/master/3079.jpg?width=1200&quality=85&auto=format&fit=max&s=bf337dc1230054c7a51d86095bd967cb" alt="transport"></img>
           </div>
           <div ref={infoRef} className="content-transportation-info">
             <p>Transportation holds immense importance for college students, and embracing sustainable transportation practices is crucial for promoting a more environmentally conscious lifestyle. Opting for sustainable transportation options, such as biking, walking, or utilizing public transportation, not only reduces carbon emissions and mitigates climate change but also fosters a healthier and more active lifestyle. By prioritizing sustainable transportation, college students can contribute to creating a greener campus environment, minimize traffic congestion, and inspire others to make eco-friendly choices.</p>
@@ -54,19 +56,19 @@ export function TransportationPage() {
 
             <div className="image-section-transportation">
               <div className="image-container-transportation">
-                <img className="rounded-image-transportation" src="https://kingcounty.gov/~/media/depts/metro/travel-options/bus/rapidride/v2/rapidride-featured-image" alt="Image 1" />
+                <img className="rounded-image-transportation" src="https://kingcounty.gov/~/media/depts/metro/travel-options/bus/rapidride/v2/rapidride-featured-image" alt="cars" />
                 <div className="caption-transportation">Bus</div>
               </div>
               <div className="image-container-transportation">
-                <img className="rounded-image-transportation" src="https://cdn.geekwire.com/wp-content/uploads/2018/11/limebikes2.jpg" alt="Image 2" />
+                <img className="rounded-image-transportation" src="https://cdn.geekwire.com/wp-content/uploads/2018/11/limebikes2.jpg" alt="bus" />
                 <div className="caption-transportation">Lime Bikes and Scooters</div>
               </div>
               <div className="image-container-transportation">
-                <img className="rounded-image-transportation" src="https://kuow-prod.imgix.net/store/9a6e5ff0d9602303fff8a7805e751f7f.jpg" alt="Image 3" />
+                <img className="rounded-image-transportation" src="https://kuow-prod.imgix.net/store/9a6e5ff0d9602303fff8a7805e751f7f.jpg" alt="scooter" />
                 <div className="caption-transportation">Light Rail</div>
               </div>
               <div className="image-container-transportation">
-                <img className="rounded-image-transportation" src="https://sdotblog.seattle.gov/wp-content/uploads/sites/10/2021/02/49561821172_1d1efc37f2_b-e1613679849945.jpg" alt="Image 3" />
+                <img className="rounded-image-transportation" src="https://sdotblog.seattle.gov/wp-content/uploads/sites/10/2021/02/49561821172_1d1efc37f2_b-e1613679849945.jpg" alt="walk" />
                 <div className="caption-transportation">Walking</div>
               </div>
             </div>

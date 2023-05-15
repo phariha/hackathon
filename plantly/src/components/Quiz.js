@@ -1,19 +1,18 @@
 import React, { useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
 
 export function Quiz() {
+  const centeredMainRef = useRef(null);
+  const centeredSubRef = useRef(null);
+  const paraOneRef = useRef(null);
+  const paraTwoRef = useRef(null);
+  const paraThreeRef = useRef(null);
+
   useEffect(() => {
     document.body.style.backgroundColor = 'your-body-color';
     return () => {
       document.body.style.backgroundColor = '';
     };
   }, []);
-
-  const centeredMainRef = useRef(null);
-  const centeredSubRef = useRef(null);
-  const paraOneRef = useRef(null);
-  const paraTwoRef = useRef(null);
-  const paraThreeRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
@@ -26,21 +25,6 @@ export function Quiz() {
       });
     });
 
-    if (centeredMainRef.current) observer.observe(centeredMainRef.current);
-    if (centeredSubRef.current) observer.observe(centeredSubRef.current);
-    if (paraOneRef.current) observer.observe(paraOneRef.current);
-    if (paraTwoRef.current) observer.observe(paraTwoRef.current);
-    if (paraThreeRef.current) observer.observe(paraThreeRef.current);
-
-    return () => {
-      if (centeredMainRef.current) observer.unobserve(centeredMainRef.current);
-      if (centeredSubRef.current) observer.unobserve(centeredSubRef.current);
-      if (paraOneRef.current) observer.unobserve(paraOneRef.current);
-      if (paraTwoRef.current) observer.unobserve(paraTwoRef.current);
-      if (paraThreeRef.current) observer.unobserve(paraThreeRef.current);
-    };
-  }, []);
-
   return (
     <div className="home-body">
       <div className="container-fluid">
@@ -48,7 +32,7 @@ export function Quiz() {
             <img
               className="tree-picture"
               src='https://www.timeshighereducation.com/sites/default/files/climate_demonstration.jpg'
-              alt="tree picture"
+              alt="demonstration"
             />
           <h2 ref={centeredMainRef} className="centered-main">
           </h2>

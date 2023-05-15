@@ -11,9 +11,7 @@ export function SignIn() {
 }
 
 export function PlantNav(props) {
-    const navigate = useNavigate();
-  
-    return (
+      return (
       <>
         <Navbar className="color-Nav" variant="dark" expand="lg">
           <Navbar.Brand href="/" className="font-nav">Sustainify</Navbar.Brand>
