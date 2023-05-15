@@ -1,11 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 
 export function Quiz() {
-  const centeredMainRef = useRef(null);
-  const centeredSubRef = useRef(null);
-  const paraOneRef = useRef(null);
-  const paraTwoRef = useRef(null);
-  const paraThreeRef = useRef(null);
+  const infoRef = useRef(null);
+  const textRef = useRef(null);
 
   useEffect(() => {
     document.body.style.backgroundColor = 'your-body-color';
