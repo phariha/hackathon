@@ -24,8 +24,6 @@ const firebaseConfig = {
   measurementId: "G-54D6FS9CL0"
 };
 
-const app = initializeApp(firebaseConfig);
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <BrowserRouter>

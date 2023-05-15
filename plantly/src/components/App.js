@@ -1,8 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { Navigate } from 'react-router-dom';
-
-import { Routes, Route, useNavigate, Outlet } from "react-router-dom";
 import { PlantNav } from './Nav.js';
 import { HomePage } from "./Home.js";
 import { AboutPage } from "./About.js"
@@ -11,10 +9,6 @@ import { ExplorePage } from './Explore.js';
 import { PlantListPage } from './PlantList.js';
 import { RecyclePage } from './Recycle.js'
 import { TransportationPage } from './Transportation.js';
-
-
-// import SignInPage from './SignIn.js'
-
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import DEFAULT_USERS from '../data/users.json';
 import { Quiz } from './Quiz.js';
@@ -72,24 +66,8 @@ export default function App(props) {
                     <Route path="/Recycle" element={<RecyclePage />} />
                     <Route path="/Transportation" element={<TransportationPage />} />
                     <Route path="/About" element={<AboutPage />} />
-                    {/* <Route path="/SignIn" element={<SignInPage currentUser={currentUser} loginCallback={loginUser} />} /> */}
-
-                    {/* Calendar Page Protected */}
-                    {/* <Route element={<ProtectedPage currentUser={currentUser} />}>
-                        <Route path="/Calendar" element={<PlantCalendarPage currentUser={currentUser} />} />
-                    </Route> */}
                 </Routes>
             </div>
         </div>
     );
-
-    // Protected Routes
-    // function ProtectedPage(props) {
-    //     if (props.currentUser.userId === null) {
-    //         return <Navigate to="/SignIn"></Navigate>
-    //     }
-    //     else {
-    //         return <Outlet />
-    //     }
-    // }
 }

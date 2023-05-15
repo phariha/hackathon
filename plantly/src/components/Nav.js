@@ -1,8 +1,7 @@
 import React from 'react'; //import React Component
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
-// import { getAuth, signOut } from 'firebase/auth';
 
 export function SignIn() {
     return (

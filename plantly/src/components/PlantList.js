@@ -77,7 +77,7 @@ function PlantCard(props) {
 
     return (
         <ReactCardFlip isFlipped={flip} flipDirection="vertical">
-            <div role="plant info card" className="explore-item text-center" onClick={() => setFlip(!flip)}>
+            <div role="button" className="explore-item text-center" onClick={() => setFlip(!flip)}>
                 <h3>{plant.name}</h3>
                 <div className="plant-img">
                     <img title={plant.Source} src={plant.img} alt={plant.alt}></img>
