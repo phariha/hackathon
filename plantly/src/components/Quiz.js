@@ -1,8 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 
 export function Quiz() {
-  const infoRef = useRef(null);
-  const textRef = useRef(null);
+  const centeredMainRef = useRef(null);
+  const centeredSubRef = useRef(null);
+  const paraOneRef = useRef(null);
+  const paraTwoRef = useRef(null);
+  const paraThreeRef = useRef(null);
 
   useEffect(() => {
     document.body.style.backgroundColor = 'your-body-color';
@@ -22,13 +25,19 @@ useEffect(() => {
     });
   });
 
-  if (infoRef.current) observer.observe(infoRef.current);
-  if (textRef.current) observer.observe(textRef.current);
+  if (centeredMainRef.current) observer.observe(centeredMainRef.current);
+if (centeredSubRef.current) observer.observe(centeredSubRef.current);
+if (paraOneRef.current) observer.observe(paraOneRef.current);
+if (paraTwoRef.current) observer.observe(paraTwoRef.current);
+if (paraThreeRef.current) observer.observe(paraThreeRef.current);
 
-  return () => {
-    if (infoRef.current) observer.unobserve(infoRef.current);
-    if (textRef.current) observer.unobserve(textRef.current);
-  };
+return () => {
+  if (centeredMainRef.current) observer.unobserve(centeredMainRef.current);
+  if (centeredSubRef.current) observer.unobserve(centeredSubRef.current);
+  if (paraOneRef.current) observer.unobserve(paraOneRef.current);
+  if (paraTwoRef.current) observer.unobserve(paraTwoRef.current);
+  if (paraThreeRef.current) observer.unobserve(paraThreeRef.current);
+};
 }, []);
 
   return (
