@@ -56,7 +56,7 @@ export default function App(props) {
         <div>
             <PlantNav currentUser={currentUser} />
             <div>
-                <Routes>
+                <Route>
                     <Route path="*" element={<Navigate to="/" />} />
                     <Route path="/" element={<HomePage />} currentUser={currentUser} />
                     <Route path="/Quiz" element={<Quiz />} />
@@ -67,7 +67,7 @@ export default function App(props) {
                     <Route path="/Recycle" element={<RecyclePage />} />
                     <Route path="/Transportation" element={<TransportationPage />} />
                     <Route path="/About" element={<AboutPage />} />
-                </Routes>
+                </Route>
             </div>
         </div>
     );
