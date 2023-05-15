@@ -14,16 +14,25 @@ export function Quiz() {
     };
   }, []);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.intersectionRatio > 0) {
-          entry.target.classList.add('animate');
-        } else {
-          entry.target.classList.remove('animate');
-        }
-      });
+useEffect(() => {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.intersectionRatio > 0) {
+        entry.target.classList.add('animate');
+      } else {
+        entry.target.classList.remove('animate');
+      }
     });
+  });
+
+  if (infoRef.current) observer.observe(infoRef.current);
+  if (textRef.current) observer.observe(textRef.current);
+
+  return () => {
+    if (infoRef.current) observer.unobserve(infoRef.current);
+    if (textRef.current) observer.unobserve(textRef.current);
+  };
+}, []);
 
   return (
     <div className="home-body">
