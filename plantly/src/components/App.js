@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { Navigate } from 'react-router-dom';
 import { PlantNav } from './Nav.js';
@@ -34,7 +34,7 @@ export default function App(props) {
     // Sign in user
     const [currentUser, setCurrentUser] = useState(DEFAULT_USERS[0]) //default to null user
 
-    //effect to run when the component first loads
+    // effect to run when the component first loads
     useEffect(() => {
         const auth = getAuth();
 
@@ -56,7 +56,7 @@ export default function App(props) {
         <div>
             <PlantNav currentUser={currentUser} />
             <div>
-                <Route>
+                <Routes>
                     <Route path="*" element={<Navigate to="/" />} />
                     <Route path="/" element={<HomePage />} currentUser={currentUser} />
                     <Route path="/Quiz" element={<Quiz />} />
@@ -67,7 +67,7 @@ export default function App(props) {
                     <Route path="/Recycle" element={<RecyclePage />} />
                     <Route path="/Transportation" element={<TransportationPage />} />
                     <Route path="/About" element={<AboutPage />} />
-                </Route>
+                </Routes>
             </div>
         </div>
     );

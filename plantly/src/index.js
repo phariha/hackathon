@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
 import { initializeApp } from "firebase/app";
 
 import { BrowserRouter } from 'react-router-dom';
@@ -23,6 +24,9 @@ const firebaseConfig = {
   appId: "1:58113007538:web:9be556b3f696dc4385ceab",
   measurementId: "G-54D6FS9CL0"
 };
+
+firebase.initializeApp(firebaseConfig);
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
