@@ -4,29 +4,18 @@ import { useState } from 'react';
 import ReactCardFlip from "react-card-flip";
 
 export function PlantListPage(props) {
-
-    // The component initializes a local variable plants to hold the plant data passed via props
     let plants = props.plants;
 
-    // creating array of elements for filter
     const costArray = ['$', '$$', '$$$'];
-    
-    // useState hook to keep track of variable and function to update its value
-    // The component renders a select input element (<select>) to allow users to filter plants by cost level
-    // The selected cost level is stored in the selectedCost state variable
     const [selectedCost, isSelectedCostType] = useState('');
 
-    // mapping an option for each item inside array
     const costOptionElems = costArray.map((level) => {
         return <option key={level} value={level}>{level}</option>
     })
 
-    // useState hook to keep track of variable and function to update its value
     // search bar and returning plants that correlate with the query
     const [query, setQuery] = useState("");
     
-    // calling filter function on plants array, which then takes a callback function as an argument for each plant in the array
-    // map method is called on the filtered result -> it takes another callback function that transforms each element of the filtered result array into a PlantCard component
     const plantsFiltered = plants.filter(plant => plant.name.toLowerCase().includes(query)).map((plant) => {
         return <PlantCard key={plant.name} plants={plant} />
     }

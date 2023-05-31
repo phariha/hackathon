@@ -4,7 +4,6 @@ import PLANT_DATA from "../data/plants.json";
 import _ from 'lodash';
 
 export function PlantInfoPage(props) {
-    // useParams hook returns key and value pairs of the dynamic params from the current URL 
     const plantNameString = useParams();
     let plant =  _.find(PLANT_DATA, {name: plantNameString.plantName}); //find plant in data
 

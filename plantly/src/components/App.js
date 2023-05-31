@@ -31,34 +31,13 @@ export default function App(props) {
         }
     }
 
-    // Sign in user
-    const [currentUser, setCurrentUser] = useState(DEFAULT_USERS[0]) //default to null user
-
-    // effect to run when the component first loads
-    useEffect(() => {
-        const auth = getAuth();
-
-        onAuthStateChanged(auth, (firebaseUser) => {
-            if (firebaseUser) {
-                firebaseUser.userId = firebaseUser.uid;
-                firebaseUser.userName = firebaseUser.displayName;
-                firebaseUser.userImg = firebaseUser.photoURL || "/img/null.png";
-                setCurrentUser(firebaseUser);
-            }
-            else { //no user
-                setCurrentUser(DEFAULT_USERS[0]);
-            }
-        })
-
-    }, [])
-
     return (
         <div>
-            <PlantNav currentUser={currentUser} />
+            <PlantNav />
             <div>
                 <Routes>
                     <Route path="*" element={<Navigate to="/" />} />
-                    <Route path="/" element={<HomePage />} currentUser={currentUser} />
+                    <Route path="/" element={<HomePage />} />
                     <Route path="/WhyMe" element={<WhyMe />} />
                     <Route path="/Explore" element={<ExplorePage />} >
                         <Route path="/Explore/:plantName" element={<PlantInfoPage plants={displayedPlants} />} />
