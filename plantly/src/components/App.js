@@ -12,7 +12,7 @@ import { RecyclePage } from './Recycle.js'
 import { TransportationPage } from './Transportation.js';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import DEFAULT_USERS from '../data/users.json';
-import { Quiz } from './Quiz.js';
+import { WhyMe } from './WhyMe.js';
 
 export default function App(props) {
     // Search/filter rendered plants
@@ -59,7 +59,7 @@ export default function App(props) {
                 <Routes>
                     <Route path="*" element={<Navigate to="/" />} />
                     <Route path="/" element={<HomePage />} currentUser={currentUser} />
-                    <Route path="/Quiz" element={<Quiz />} />
+                    <Route path="/WhyMe" element={<WhyMe />} />
                     <Route path="/Explore" element={<ExplorePage />} >
                         <Route path="/Explore/:plantName" element={<PlantInfoPage plants={displayedPlants} />} />
                         <Route index={true} element={<PlantListPage applyFilterCallback={applyFilter} plants={displayedPlants} />} />

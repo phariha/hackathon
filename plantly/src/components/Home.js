@@ -1,13 +1,22 @@
 import React, { useRef, useEffect } from 'react';
 
 export function HomePage(props) {
+  // useRef is used to declare a variable to hold a reference to something -> in this case, it's the elements holding the text
+
   const centeredMainRef = useRef(null);
   const centeredSubRef = useRef(null);
   const paraOneRef = useRef(null);
   const paraTwoRef = useRef(null);
   const paraThreeRef = useRef(null);
 
+  // perform side effects in function component
+  // IntersectionObserver API: lets you register a callback function that is executed whenever an element they wish to monitor enters
+  // or exits another element (or the viewport), or when the amount by which the two intersect changes by a requested amount.
+  // intersectionRatio: represents the ratio of intersection between the observed element and the root element or viewport
   useEffect(() => {
+    // entries refers to the array of IntersectionObserverEntry objects that are passed to the callback function 
+    // refers to individual elements being observed and provide information about their intersection with the root element or
+    // viewport. 
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.intersectionRatio > 0) {
@@ -18,18 +27,21 @@ export function HomePage(props) {
       });
     });
 
+    // When a ref is passed to an element in render, a reference to the node becomes accessible at the current attribute of the ref.
     const centeredMainNode = centeredMainRef.current;
     const centeredSubNode = centeredSubRef.current;
     const paraOneNode = paraOneRef.current;
     const paraTwoNode = paraTwoRef.current;
     const paraThreeNode = paraThreeRef.current;
 
+    // instance method that tells the IntersectionObserver a target element to observe.
     observer.observe(centeredMainNode);
     observer.observe(centeredSubNode);
     observer.observe(paraOneNode);
     observer.observe(paraTwoNode);
     observer.observe(paraThreeNode);
 
+    // instance method that tells the IntersectionObserver to stop observing a particular target element.
     return () => {
       if (centeredMainNode) observer.unobserve(centeredMainNode);
       if (centeredSubNode) observer.unobserve(centeredSubNode);
@@ -39,7 +51,8 @@ export function HomePage(props) {
     };
   }, []);
 
-
+  // Refs are commonly assigned to an instance property when a component is constructed so they can be referenced throughout the
+  // component.
 
   return (
     <>

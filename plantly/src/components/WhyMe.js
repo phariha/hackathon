@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-export function Quiz() {
+export function WhyMe() {
   const centeredMainRef = useRef(null);
   const centeredSubRef = useRef(null);
   const paraOneRef = useRef(null);

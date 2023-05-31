@@ -17,7 +17,7 @@ export function PlantNav(props) {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ml-auto"> {/* Add the ml-auto class */}
-              <Nav.Link aria-label="Quiz Page" as={Link} to="/Quiz">
+              <Nav.Link aria-label="whyMe Page" as={Link} to="/WhyMe">
                 Why Me
               </Nav.Link>
               <NavDropdown title="Take Action" id="basic-nav-dropdown">

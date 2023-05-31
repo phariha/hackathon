@@ -267,12 +267,12 @@ p {
 .animate-fade-in {
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
-  }
+}
   
-  @keyframes fadeIn {
+@keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
-  }
+}
 
 .container-fluid {
     height: 100vh;
@@ -544,7 +544,7 @@ footer a:hover {
     margin-top: 0rem;
 }
 
-/* Quiz Page */
+/* WhyMe Page */
 
 
 .text-box-wrap-whyme {
@@ -582,20 +582,6 @@ footer a:hover {
 
 .right-col-container-whyme p {
     font-size: 1.5em;
-}
-
-/* Quiz Result Page */
-
-.result-container {
-    text-align: center;
-    max-width: 45%;
-}
-
-.plant-picture img {
-    text-align: center;
-    max-width: 45%;
-    margin-top: 350px;
-    margin-left: 570px;
 }
 
 /* Explore Page */
@@ -735,66 +721,7 @@ cite {
 }
 
 /* Calendar Page */
-.calendar {
-    margin: 50px;
-}
 
-.calendar-title {
-    text-align: center;
-    font-size: 1.5rem;
-    padding-top: 1.2rem;
-    padding-bottom: 1.2rem;
-}
-
-.calendar-explanation {
-    text-align: center;
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-}
-
-.event-date {
-    margin-top: 5px;
-}
-
-.event-title {
-    font-size: 1rem;
-}
-
-.event-btn {
-    margin-top: 10px;
-    font-size: 0.8rem;
-}
-
-.new-event {
-    text-align: center;
-    font-size: 2rem;
-    line-height: 30px;
-    border-radius: 50%;
-    position: absolute;
-    bottom: -40px;
-    right: 120px;
-}
-
-.new-event:hover {
-    background-color: #757575;
-}
-
-.button-text {
-    position: absolute;
-    bottom: -50px;
-    right: 3px;
-    margin-right: 2rem;
-}
-
-.add-event {
-    text-align: center;
-    background-color: #A0A66F;
-    width: min-content;
-    padding: 1rem;
-    border-radius: 16px;
-    color: white;
-    box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px, rgb(0 0 0 / 30%) 0px 18px 36px -18px;
-}
 
 @media (min-width: 320px) {
     /* Plant Info */
@@ -815,57 +742,6 @@ cite {
         margin: 0 auto;
     }
 
-    /* Quiz Result Page */
-    .plant-picture img {
-        display: none;
-    }
-
-    /* Quiz Page */
-    .quiz-contain {
-        position: absolute;
-        top: 70%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 20px 35px;
-    }
-
-    .quiz-contain button {
-        padding: 10px 15px;
-        font-size: 15px;
-    }
-
-    .quiz-question-container {
-        padding: 3rem;
-    }
-
-    .questionText {
-        color: white;
-        font-size: 1rem;
-    }
-
-    .question-count {
-        font-size: 1rem;
-        margin-bottom: 2rem;
-        font-weight: bold;
-    }
-
-    .quiz-body {
-        background-color: #C5BAA4;
-    }     
-
-    /* Quiz Result Pages */
-    .quiz-result-heading {
-        padding-top: 2rem;
-        font-size: 1.5rem;
-    }
-
-    .quiz-img-column {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-    }
-
 }
 
 @media (min-width: 576px) {
@@ -879,39 +755,6 @@ cite {
 
     .add-event {
         margin-left: 2rem;
-    }
-
-    /* Quiz Page */
-    .quiz-question-container {  
-        padding: 8rem;
-    }
-
-    .questionText {
-        color: white;
-        font-size: 1.5rem;
-    }
-
-    .question-count {
-        font-size: 1.5rem;
-        margin-bottom: 2rem;
-        font-weight: bold;
-    }
-
-    /* Quiz Result Pages */
-    .quiz-result-heading {
-        padding-top: 2rem;
-        font-size: 1.5rem;
-    }
-
-    .quiz-img-column {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-    }
-
-    .result-descrip {
-        font-size: 1.2rem;
     }
 }
 
@@ -983,69 +826,15 @@ cite {
     .care-info {
         padding-top: 0;
     }
-    
-    /* Quiz Result Pages */
-    .quiz-img-column {
-        float: left;
-        width: 33.33%;
-        padding: 5px;
-    }
-
-    .quiz-result-heading {
-        padding-top: 2rem;
-    }
-
-    .result-descrip {
-        font-size: 1.2rem;
-    }
 
 }
 
 @media (min-width: 960px) {
 
-    /* Calendar Page */
-    .new-event {
-        bottom: -190px;
-    }
-
-    .button-text {
-        position: absolute;
-        bottom: -200px;
-    }
-
+    /* Explore Page */
     .search-bar {
         font-size: 1.5rem;
         align-self: center;
-    }
-
-    .calendar {
-        width: 80%;
-        margin-top: 0rem;
-        height: 100%;
-    }
-
-    .compose-calendar {
-        display:flex;
-    }
-
-    .add-event {
-        height:fit-content;
-    }
-
-    /* Quiz Result Pages */
-    .quiz-img-column {
-        float: left;
-        width: 33.33%;
-        padding: 5px;
-    }
-
-    .quiz-result-heading {
-        padding-top: 2.5rem;
-        font-size: 2.5rem;
-    }
-
-    .result-descrip {
-        font-size: 1.5rem;
     }
 
     /* Home Page */
@@ -1130,32 +919,4 @@ cite {
         padding-top: 0;
     }
 
-    /* Quiz Result Pages */
-    .quiz-img-column {
-        float: left;
-        width: 33.33%;
-        padding: 5px;
-    }
-
-    .quiz-result-heading {
-        padding-top: 2.5rem;
-        font-size: 2.5rem;
-    }
-
-    .result-descrip {
-        font-size: 1.5rem;
-    }
-
-    figcaption {
-        text-align: center;
-    }
-}
-
-/* Subscribe Form */
-.form {
-    width: 50%;
-}
-
-.form-input {
-    padding-bottom: 1rem;
 }
