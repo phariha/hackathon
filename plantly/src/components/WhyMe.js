@@ -8,13 +8,6 @@ export function WhyMe() {
   const paraThreeRef = useRef(null);
 
   useEffect(() => {
-    document.body.style.backgroundColor = 'your-body-color';
-    return () => {
-      document.body.style.backgroundColor = '';
-    };
-  }, []);
-
-  useEffect(() => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.intersectionRatio > 0) {

@@ -2,7 +2,6 @@ import React from 'react'; //import React Component
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
-
 export function PlantNav(props) {
   return (
     <>

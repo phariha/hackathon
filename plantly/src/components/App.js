@@ -10,8 +10,6 @@ import { ExplorePage } from './Explore.js';
 import { PlantListPage } from './PlantList.js';
 import { RecyclePage } from './Recycle.js'
 import { TransportationPage } from './Transportation.js';
-import { getAuth, onAuthStateChanged } from 'firebase/auth';
-import DEFAULT_USERS from '../data/users.json';
 import { WhyMe } from './WhyMe.js';
 
 export default function App(props) {

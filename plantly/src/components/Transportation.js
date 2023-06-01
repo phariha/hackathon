@@ -1,13 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 
 export function TransportationPage() {
-  useEffect(() => {
-    document.body.style.backgroundColor = 'your-body-color';
-    return () => {
-      document.body.style.backgroundColor = '';
-    };
-  }, []);
-
   const infoRef = useRef(null);
   const textRef = useRef(null);
 

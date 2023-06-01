@@ -1,13 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
 export function RecyclePage() {
-  useEffect(() => {
-    document.body.style.backgroundColor = 'your-body-color';
-    return () => {
-      document.body.style.backgroundColor = '';
-    };
-  }, []);
-
   const infoRef = useRef(null);
   const textRef = useRef(null);
 
